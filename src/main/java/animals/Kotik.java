@@ -84,20 +84,20 @@ public class Kotik {
     }
 
     // Создаем методы для кормления котика
-    public boolean eat(int units) {
+    public void eat(int units) {
         satiety += units;
         System.out.println(name + " is eating.");
-        return true;
     }
 
-    public boolean eat(int units, String food) {
+
+
+    public void eat(int units, String food) {
         satiety += units;
         System.out.println(name + " is eating " + food + ".");
-        return true;
     }
 
-    public boolean eat() {
-        return eat(1, "something");
+    public void eat() {
+        eat(1, "something");
     }
 
     // Создаем метод liveAnotherDay()
